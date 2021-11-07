@@ -32,7 +32,7 @@ export default function Main() {
             justifyContent="center"
         >
 
-            <Grid item container xs={12} md={8} lg={6} className={classes.innerPage}>
+            <Grid item container xs={12} md={12} lg={8} className={classes.innerPage}>
                 <Grid item xs={12}
                     className={classes.spacingBottom40, classes.gridPaddingLeft40}>
                     <AppBar
@@ -43,7 +43,7 @@ export default function Main() {
                 <Grid item xs={12} container className={clsx(classes.spacingBottom40)}>
                     <Grid item xs={12} container
                         className={clsx(classes.firstRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)}>
-                        <Grid item xs={12} lg={6} className={clsx(classes.column)}>
+                        <Grid item xs={12} md={6} sm={8} className={clsx(classes.column)}>
                             <Typography
                                 variant='h4'
                                 className={classes.headingWhite}
@@ -78,7 +78,7 @@ export default function Main() {
                                 </Button>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} lg={6} className={classes.amountContainer}>
+                        <Grid item xs={12} md={6} sm={8} className={classes.amountContainer}>
                             <Box className={clsx(classes.amountCenter)}>
                                 <Box className={clsx(classes.amountText, classes.spacingBottom20)}>
                                     <Typography
@@ -130,7 +130,7 @@ export default function Main() {
                     </Grid>
 
                     <Grid item container xs={12} className={classes.gridPaddingLeft40}>
-                        <Grid item xs={12} md={4} >
+                        <Grid item xs={12} sm={6} md={4}  >
                             <Box className={classes.stepsCards}>
                                 <img src={threeDModlingImage} alt='logo' width={40} />
                                 <Typography className={classes.stepCardLabel}>
@@ -143,7 +143,7 @@ export default function Main() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={4} >
+                        <Grid item xs={12} sm={6} md={4}  >
                             <Box className={classes.stepsCards}>
                                 <img src={orbitImage} alt='logo' width={40} />
                                 <Typography className={classes.stepCardLabel}>
@@ -156,7 +156,7 @@ export default function Main() {
                                 </Typography>
                             </Box>
                         </Grid>
-                        <Grid item xs={12} md={4} >
+                        <Grid item xs={12} sm={6} md={4}  >
                             <Box className={classes.stepsCards}>
                                 <img src={replaceImage} alt='logo' width={40} />
                                 <Typography className={classes.stepCardLabel}>
@@ -170,6 +170,7 @@ export default function Main() {
                             </Box>
                         </Grid>
                     </Grid>
+                    {/**responsiveness issues below this  */}
                     <Grid item container xs={12}
                         className={clsx(classes.graphRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)} >
                         <Grid item xs={12} lg={6}

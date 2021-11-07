@@ -10,11 +10,8 @@ import fonts from './../constants/fonts'
 const useStyles = makeStyles({
     root: {
         backgroundColor: '#16161d',
-        borderRadius: 4,
-        // width: '50%',
-        // height: 'auto',
-        // margin: 'auto',
-
+        width: '100vw',
+        height: '100vh',
     },
     innerPage: {
         backgroundImage: `url(${pageBackground})`
@@ -82,14 +79,10 @@ const useStyles = makeStyles({
         fontFamily: fonts.ralewayLight
     },
     forecastButton: {
-        minWidth: 100,
-        width: 150,
         margin: '15px',
 
     },
     performanceButton: {
-        minWidth: 100,
-        width: 150,
         margin: '15px',
     },
     checkButton: {
