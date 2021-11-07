@@ -9,7 +9,7 @@ import fonts from './../constants/fonts'
 
 const useStyles = makeStyles({
     root: {
-        backgroundColor: '#16161d',
+        backgroundColor: '#000000',
         width: '100vw',
         height: '100vh',
     },
