@@ -155,7 +155,8 @@ const useStyles = makeStyles({
         alignItems: 'flex-end'
     },
     lastRow: {
-        height: '650px',
+        mineight: '650px',
+        height: '850px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
