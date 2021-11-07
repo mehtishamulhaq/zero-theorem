@@ -19,17 +19,20 @@ import replaceImage from './../assets/mainPage/replace.svg';
 import graphImage from './../assets/mainPage/incentives-banner.png';
 import humanImage from './../assets/mainPage/incentives-banner-2.png';
 
-import pageBackground from './../assets/mainPage/bg.jpg';
-import colors from './../constants/colors'
 import useStyles from '../styles/main.styles';
 
 
 export default function Main() {
     const classes = useStyles();
     return (
-        <Box className={classes.root}>
-            {/* <Container maxWidth="md"> */}
-            <Grid container >
+        <Grid container
+            className={classes.root}
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+        >
+
+            <Grid item container xs={12} md={8} lg={6} className={classes.innerPage}>
                 <Grid item xs={12}
                     className={classes.spacingBottom40, classes.gridPaddingLeft40}>
                     <AppBar
@@ -40,7 +43,7 @@ export default function Main() {
                 <Grid item xs={12} container className={clsx(classes.spacingBottom40)}>
                     <Grid item xs={12} container
                         className={clsx(classes.firstRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)}>
-                        <Grid item xs={12} md={6} className={clsx(classes.column)}>
+                        <Grid item xs={12} lg={6} className={clsx(classes.column)}>
                             <Typography
                                 variant='h4'
                                 className={classes.headingWhite}
@@ -75,7 +78,7 @@ export default function Main() {
                                 </Button>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md={6} className={classes.amountContainer}>
+                        <Grid item xs={12} lg={6} className={classes.amountContainer}>
                             <Box className={clsx(classes.amountCenter)}>
                                 <Box className={clsx(classes.amountText, classes.spacingBottom20)}>
                                     <Typography
@@ -169,13 +172,13 @@ export default function Main() {
                     </Grid>
                     <Grid item container xs={12}
                         className={clsx(classes.graphRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)} >
-                        <Grid item xs={12} md={6}
+                        <Grid item xs={12} lg={6}
                             className={classes.graphContainer} >
                             <img src={graphImage} alt='graph' width='100%' />
                         </Grid>
-                        <Grid item container xs={12} md={6}
+                        <Grid item container xs={12} lg={6}
                             className={classes.incentive} >
-                            <Grid item xs={12} md={7}>
+                            <Grid item xs={12} lg={7}>
                                 <Box className={classes.inCentiveContainer}>
                                     <Typography
                                         variant='h4'
@@ -200,18 +203,18 @@ export default function Main() {
                                     </Button>
                                 </Box>
                             </Grid>
-                            <Grid item xs={12} md={5}>
+                            <Grid item xs={12} lg={5} className='human1' style={{ height: 400 }}>
                                 <img src={humanImage} alt='human image' width='200' style={{ zIndex: 1000 }} />
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid item container xs={12} className={classes.graphRow}>
-                        <Grid item container xs={12} md={6}
+                        <Grid item container xs={12} lg={6}
                             className={classes.incentive} >
-                            <Grid item xs={12} md={4}>
+                            <Grid item xs={12} lg={4}>
                                 <img src={humanImage} alt='human image' width='200' />
                             </Grid>
-                            <Grid item xs={12} md={8}>
+                            <Grid item xs={12} lg={8}>
                                 <Box className={clsx(classes.inCentiveContainer, classes.alignRightForColumn)}>
                                     <Typography
                                         variant='h4'
@@ -242,7 +245,7 @@ export default function Main() {
                                 </Box>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} md={6}
+                        <Grid item xs={12} lg={6}
                             className={classes.graphContainer} >
                             <img src={graphImage} alt='graph' width='100%' />
                         </Grid>
@@ -289,7 +292,6 @@ export default function Main() {
                     </Grid>
                 </Grid>
             </Grid>
-            {/* </Container> */}
-        </Box>
+        </Grid>
     )
 }

@@ -11,9 +11,12 @@ const useStyles = makeStyles({
     root: {
         backgroundColor: '#16161d',
         borderRadius: 4,
-        width: '50%',
-        height: 'auto',
-        margin: 'auto',
+        // width: '50%',
+        // height: 'auto',
+        // margin: 'auto',
+
+    },
+    innerPage: {
         backgroundImage: `url(${pageBackground})`
     },
     spacingBottom40: {
@@ -79,12 +82,15 @@ const useStyles = makeStyles({
         fontFamily: fonts.ralewayLight
     },
     forecastButton: {
+        minWidth: 100,
         width: 150,
+        margin: '15px',
 
     },
     performanceButton: {
+        minWidth: 100,
         width: 150,
-        marginLeft: '30px',
+        margin: '15px',
     },
     checkButton: {
         width: 150,
