@@ -31,8 +31,8 @@ export default function Main() {
             alignItems="center"
             justifyContent="center"
         >
-
-            <Grid item container xs={12} md={12} lg={8} className={classes.innerPage}>
+            <Grid item container xs={12} md={10} lg={8} className={classes.innerPage}>
+                {/* AppToolBar Top */}
                 <Grid item xs={12}
                     className={classes.spacingBottom40, classes.gridPaddingLeft40}>
                     <AppBar
@@ -40,6 +40,7 @@ export default function Main() {
                         options={AppBarOptions}
                     />
                 </Grid>
+                {/* middle content */}
                 <Grid item xs={12} container className={clsx(classes.spacingBottom40)}>
                     <Grid item xs={12} container
                         className={clsx(classes.firstRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)}>
@@ -204,13 +205,15 @@ export default function Main() {
                                     </Button>
                                 </Box>
                             </Grid>
-                            <Grid item xs={12} lg={5} className='human1' style={{ height: 400 }}>
-                                <img src={humanImage} alt='human image' width='200' style={{ zIndex: 1000 }} />
+                            <Grid item xs={12} lg={5} className='human1' >
+                                <img src={humanImage} alt='human image' width='200' />
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item container xs={12} className={classes.graphRow}>
-                        <Grid item container xs={12} lg={6}
+                    {/* graph row 2 */}
+                    <Grid item container xs={12}
+                        className={clsx(classes.graphRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)}>
+                        <Grid item container xs={12} md={8} lg={6}
                             className={classes.incentive} >
                             <Grid item xs={12} lg={4}>
                                 <img src={humanImage} alt='human image' width='200' />
@@ -246,7 +249,7 @@ export default function Main() {
                                 </Box>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} lg={6}
+                        <Grid item xs={12} md={8} lg={6}
                             className={classes.graphContainer} >
                             <img src={graphImage} alt='graph' width='100%' />
                         </Grid>
@@ -277,20 +280,22 @@ export default function Main() {
                             </Button>
                         </Box>
                     </Grid>
-                    <Grid item xs={12} className={clsx(classes.gridPaddingLeft40)}>
-                        <AppBar
-                            logo={logo}
-                            options={AppBarOptions}
-                        />
-                    </Grid>
-                    <Grid item xs={12} className={clsx(classes.copyRightContainer, classes.gridPaddingRight40)}>
-                        <Typography
-                            variant='h4'
-                            className={clsx(classes.copyRightDescription)}
-                        >
-                            copyright &copy; 2020 Zero Theorem All rights reserved Made by Presto
-                        </Typography>
-                    </Grid>
+
+                </Grid>
+                {/* AppToolBar bottom */}
+                <Grid item xs={12} className={clsx(classes.gridPaddingLeft40)}>
+                    <AppBar
+                        logo={logo}
+                        options={AppBarOptions}
+                    />
+                </Grid>
+                <Grid item xs={12} className={clsx(classes.copyRightContainer, classes.gridPaddingRight40)}>
+                    <Typography
+                        variant='h4'
+                        className={clsx(classes.copyRightDescription)}
+                    >
+                        copyright &copy; 2020 Zero Theorem All rights reserved Made by Presto
+                    </Typography>
                 </Grid>
             </Grid>
         </Grid>

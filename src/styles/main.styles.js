@@ -14,7 +14,8 @@ const useStyles = makeStyles({
         height: '100vh',
     },
     innerPage: {
-        backgroundImage: `url(${pageBackground})`
+        backgroundImage: `url(${pageBackground})`,
+        backgroundSize: 'cover',
     },
     spacingBottom40: {
         marginBottom: '40px'
@@ -47,7 +48,7 @@ const useStyles = makeStyles({
         width: 150,
     },
     firstRow: {
-        height: '500px',
+        minHeight: '660px',
         display: 'flex',
         alignItems: 'center',
         backgroundImage: `url(${circleBackTop})`,
@@ -92,7 +93,7 @@ const useStyles = makeStyles({
         width: 150,
     },
     philosophyContainer: {
-        height: '220px',
+        minHeight: '313px',
         paddingTop: 30,
         justifyContent: 'flex-start',
         display: 'flex',
@@ -129,7 +130,7 @@ const useStyles = makeStyles({
         fontFamily: fonts.ralewayLight,
     },
     graphRow: {
-        height: '400px',
+        minHeight: '400px',
         display: 'flex',
         alignItems: 'center'
     },
