@@ -3,14 +3,7 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
+import Link from '@mui/material/Link';
 import { makeStyles } from '@mui/styles';
 import { appBarTypes } from '../constants/commonConstants';
 
@@ -36,7 +29,8 @@ const useStyles = makeStyles({
     },
     menuItem: {
         color: 'white',
-        fontSize: 12
+        fontSize: 12,
+        cursor: 'pointer',
     }
 });
 
@@ -51,7 +45,9 @@ export default function AppToolBar(props) {
             <Toolbar className={classes.toolBar}>
                 {logo ? (
                     <Box className={classes.logoContainer}>
-                        <img src={logo} width={140} alt='logo' />
+                        <Link href="#" underline="none">
+                            <img src={logo} width={140} alt='logo' />
+                        </Link>
                     </Box >
                 ) : null}
 
@@ -59,12 +55,14 @@ export default function AppToolBar(props) {
                     {options.map((item, index) => {
                         if (item.type === appBarTypes.LABEL) {
                             return (
-                                <Typography
-                                    className={classes.menuItem}
-                                    component='body2'
-                                    {...item.props}>
-                                    {item.label}
-                                </Typography>
+                                <Link href="#" underline="hover">
+                                    <Typography
+                                        className={classes.menuItem}
+                                        component='body2'
+                                        {...item.props}>
+                                        {item.label}
+                                    </Typography>
+                                </Link>
                             )
                         } else if (item.type === appBarTypes.ICON) {
                             <item.icon
