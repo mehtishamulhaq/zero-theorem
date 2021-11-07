@@ -76,32 +76,34 @@ export default function Main() {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} md={6} className={classes.amountContainer}>
-                            <Box className={clsx(classes.amountText, classes.spacingBottom20)}>
+                            <Box className={clsx(classes.amountCenter)}>
+                                <Box className={clsx(classes.amountText, classes.spacingBottom20)}>
+                                    <Typography
+                                        variant='h4'
+                                        component='span'
+                                        style={{ marginRight: 10 }}
+                                    >
+                                        $ 1.000
+                                    </Typography>
+
+                                    <Box className={classes.amountChangeIcons}>
+                                        <ArrowDropUpOutlinedIcon style={{ color: 'green' }} />
+                                        <ArrowDropDownOutlinedIcon style={{ color: 'red' }} />
+                                    </Box>
+                                </Box>
                                 <Typography
                                     variant='h4'
-                                    component='span'
-                                    className={classes.headingWhite}
-                                    style={{ marginRight: 10 }}
+                                    className={clsx(classes.amountDescription)}
                                 >
-                                    $ 1.000
+                                    <pre>Z E R O   T H E O R E M   F O R C A S T</pre>
                                 </Typography>
-                                <Box className={classes.amountChangeIcons}>
-                                    <ArrowDropUpOutlinedIcon style={{ color: 'green' }} />
-                                    <ArrowDropDownOutlinedIcon style={{ color: 'red' }} />
-                                </Box>
+                                <Typography
+                                    variant='h4'
+                                    className={clsx(classes.amountDescription)}
+                                >
+                                    <pre>F O R   0 8 / 2 5 / 2 0 2 0</pre>
+                                </Typography>
                             </Box>
-                            <Typography
-                                variant='h4'
-                                className={clsx(classes.amountDescription)}
-                            >
-                                <pre>Z E R O   T H E O R E M   F O R C A S T</pre>
-                            </Typography>
-                            <Typography
-                                variant='h4'
-                                className={clsx(classes.amountDescription)}
-                            >
-                                <pre>F O R   0 8 / 2 5 / 2 0 2 0</pre>
-                            </Typography>
                         </Grid>
                     </Grid>
 

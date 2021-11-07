@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import { makeStyles } from '@mui/styles';
 import { appBarTypes } from '../constants/commonConstants';
+import fonts from '../constants/fonts';
 
 
 const useStyles = makeStyles({
@@ -31,6 +32,7 @@ const useStyles = makeStyles({
         color: 'white',
         fontSize: 12,
         cursor: 'pointer',
+        fontFamily: fonts.ralewayRegular
     }
 });
 

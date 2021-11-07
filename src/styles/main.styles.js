@@ -4,6 +4,7 @@ import circleBack from './../assets/mainPage/circleBack.png';
 import circleBackTop from './../assets/mainPage/circleBackTop.png';
 import pageBackground from './../assets/mainPage/bg.jpg';
 import colors from './../constants/colors'
+import fonts from './../constants/fonts'
 
 const useStyles = makeStyles({
     root: {
@@ -34,6 +35,7 @@ const useStyles = makeStyles({
     },
     headingWhite: {
         color: colors.textDefault,
+        fontFamily: 'Raleway-Bold',
         alignItems: 'center'
     },
     textWhite: {
@@ -63,6 +65,8 @@ const useStyles = makeStyles({
     amountText: {
         display: 'flex',
         flexDirection: 'row',
+        fontFamily: fonts.ralewayRegular,
+        color: colors.textDefault,
     },
     amountChangeIcons: {
         display: 'flex',
@@ -71,6 +75,7 @@ const useStyles = makeStyles({
     amountDescription: {
         color: colors.textDefault,
         fontSize: 10,
+        fontFamily: fonts.ralewayLight
     },
     forecastButton: {
         width: 150,
@@ -100,6 +105,7 @@ const useStyles = makeStyles({
         marginTop: '20px',
         marginBottom: '20px',
         fontSize: 10,
+        fontFamily: fonts.ralewayLight,
     },
     stepsCards: {
         height: '200px',
@@ -110,12 +116,14 @@ const useStyles = makeStyles({
         color: colors.textDefault,
         marginTop: '10px',
         fontSize: 12,
+        fontFamily: fonts.ralewayRegular
     },
     stepCardDescription: {
         color: colors.textDefault,
         marginTop: '10px',
         marginRight: '50px',
         fontSize: 10,
+        fontFamily: fonts.ralewayLight,
     },
     graphRow: {
         height: '400px',
@@ -137,6 +145,7 @@ const useStyles = makeStyles({
         marginTop: '20px',
         marginBottom: '20px',
         fontSize: 10,
+        fontFamily: fonts.ralewayLight,
     },
     alignRightForColumn: {
         alignItems: 'flex-end'
@@ -163,7 +172,19 @@ const useStyles = makeStyles({
     copyRightDescription: {
         color: colors.textDefault,
         fontSize: 10,
+        fontFamily: fonts.ralewayLight,
     },
+    fontRalewayBold: {
+        fontFamily: fonts.ralewayBold,
+    },
+    fontRalewayRegular: {
+        fontFamily: fonts.ralewayRegular,
+
+    },
+    fontRalewayLight: {
+        fontFamily: fonts.ralewayLight,
+
+    }
 });
 
 export default useStyles;
