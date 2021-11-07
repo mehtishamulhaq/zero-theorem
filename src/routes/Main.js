@@ -86,7 +86,7 @@ export default function Main() {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} md={6} sm={8} className={classes.amountContainer}>
-                            <Box className={clsx(classes.amountCenter)}>
+                            {/* <Box className={clsx(classes.amountCenter)}>
                                 <Box className={clsx(classes.amountText, classes.spacingBottom20)}>
                                     <Typography
                                         variant='h4'
@@ -113,7 +113,7 @@ export default function Main() {
                                 >
                                     <pre>F O R   0 8 / 2 5 / 2 0 2 0</pre>
                                 </Typography>
-                            </Box>
+                            </Box> */}
                         </Grid>
                     </Grid>
 
