@@ -46,6 +46,12 @@ export default function Main() {
                         className={clsx(classes.firstRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)}>
                         <Grid item xs={12} md={6} sm={8} className={clsx(classes.column)}>
                             <Typography
+                                variant='body2'
+                                className={clsx(classes.textWhite, classes.spacingTop20, classes.spacingBottom20)}
+                            >
+                                welcome
+                            </Typography>
+                            <Typography
                                 variant='h4'
                                 className={classes.headingWhite}
                             >
