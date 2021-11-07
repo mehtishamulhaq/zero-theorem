@@ -3,6 +3,7 @@ import { makeStyles } from '@mui/styles';
 import circleBack from './../assets/mainPage/circleBack.png';
 import circleBackTop from './../assets/mainPage/circleBackTop.png';
 import pageBackground from './../assets/mainPage/bg.jpg';
+import chart1 from './../assets/mainPage/chart-1.png';
 import colors from './../constants/colors'
 import fonts from './../constants/fonts'
 
@@ -92,10 +93,13 @@ const useStyles = makeStyles({
         width: 150,
     },
     philosophyContainer: {
-        height: '300px',
-        justifyContent: 'center',
+        height: '220px',
+        paddingTop: 30,
+        justifyContent: 'flex-start',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        backgroundImage: `url(${chart1})`,
+        backgroundSize: 'cover',
     },
     philosophyHeading: {
 

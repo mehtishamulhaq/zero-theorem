@@ -107,10 +107,10 @@ export default function Main() {
                         </Grid>
                     </Grid>
 
-                    <Grid item xs={12} md={7}
-                        className={clsx(classes.gridPaddingLeft40)}
+                    <Grid item xs={12} md={6}
+                        className={clsx(classes.gridPaddingLeft40, classes.philosophyContainer, classes.spacingBottom40)}
                     >
-                        <Box className={classes.philosophyContainer}>
+                        <Box >
                             <Typography
                                 variant='h4'
                                 className={clsx(classes.incentiveDescription)}
