@@ -173,15 +173,21 @@ export default function Main() {
                     </Grid>
                     {/**responsiveness issues below this  */}
                     <Grid item container xs={12}
-                        className={clsx(classes.graphRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)} >
+                        className={
+                            clsx(classes.graphRow,
+                                classes.gridPaddingLeft40,
+                                classes.gridPaddingRight40,
+                                classes.spacingTop40
+                            )}>
                         <Grid item xs={12} lg={6}
                             className={classes.graphContainer} >
                             <img src={graphImage} alt='graph' width='100%' />
                         </Grid>
                         <Grid item container xs={12} lg={6}
                             className={classes.incentive} >
-                            <Grid item xs={12} lg={7}>
-                                <Box className={classes.inCentiveContainer}>
+
+                            <Grid item container xs={7} >
+                                <Grid item xs={12} className={classes.inCentiveContainer}>
                                     <Typography
                                         variant='h4'
                                         className={clsx(classes.headingWhite)}
@@ -203,22 +209,27 @@ export default function Main() {
                                     >
                                         Check
                                     </Button>
-                                </Box>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={12} lg={5} className='human1' >
+                            <Grid item xs={5} className='human1' >
                                 <img src={humanImage} alt='human image' width='200' />
                             </Grid>
                         </Grid>
                     </Grid>
                     {/* graph row 2 */}
                     <Grid item container xs={12}
-                        className={clsx(classes.graphRow, classes.gridPaddingLeft40, classes.gridPaddingRight40)}>
-                        <Grid item container xs={12} md={8} lg={6}
+                        className={
+                            clsx(classes.graphRow,
+                                classes.gridPaddingLeft40,
+                                classes.gridPaddingRight40,
+                                classes.spacingTop40
+                            )}>
+                        <Grid item container xs={12} lg={6}
                             className={classes.incentive} >
-                            <Grid item xs={12} lg={4}>
+                            <Grid item xs={3} sm={4} md={5}>
                                 <img src={humanImage} alt='human image' width='200' />
                             </Grid>
-                            <Grid item xs={12} lg={8}>
+                            <Grid item xs={9} sm={8} md={7}>
                                 <Box className={clsx(classes.inCentiveContainer, classes.alignRightForColumn)}>
                                     <Typography
                                         variant='h4'
